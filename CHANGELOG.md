@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.2.4](https://github.com/awslabs/cognito-at-edge/tree/1.2.4) (2022-04-12)
+
+Update README
+
 ## [1.2.3](https://github.com/awslabs/cognito-at-edge/tree/1.2.3) (2022-04-12)
 
 Set SameSite=Strict for Cognito cookies.
