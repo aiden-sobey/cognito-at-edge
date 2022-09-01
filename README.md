@@ -1,4 +1,4 @@
-# Cognito@Edge
+# Secure Cognito@Edge
 
 *Cognito authentication made easy to protect your website with CloudFront and Lambda@Edge.*
 
@@ -8,7 +8,7 @@ This Node.js package helps you verify that users making requests to a CloudFront
 
 ### Alternatives
 
-This package allows you to easily parse and verify Cognito cookies in a Lambda@Edge function. If you want full control over the configuration of AWS resources (CloudFront, Cognito, Lambda@Edge...), this is the solution for you.
+This package allows you to easily parse and verify secure Cognito cookies in a Lambda@Edge function. If you want full control over the configuration of AWS resources (CloudFront, Cognito, Lambda@Edge...), this is the solution for you.
 
 If you want to try it out easily or to quickstart a new project, we recommend having a look at the [cognito-at-edge-federated-ui-sample](https://github.com/aws-samples/cognito-at-edge-federated-ui-sample) repository. It allows you to configure and deploy a sample application which uses Cognito@Edge in a few CLI commands.
 
@@ -18,10 +18,10 @@ If you need more configuration options (e.g. bring your own user pool or CloudFr
 
 ### How To Install
 
-The preferred way to install the AWS cognito-at-edge for Node.js is to use the [npm](http://npmjs.org/) package manager for Node.js. Simply type the following into a terminal window:
+The preferred way to install the AWS secure-cognito-at-edge for Node.js is to use the [npm](http://npmjs.org/) package manager for Node.js. Simply type the following into a terminal window:
 
 ``` shell
-npm install cognito-at-edge
+npm install secure-cognito-at-edge
 ```
 
 ### Usage
@@ -31,7 +31,7 @@ To use the package, you must create a [Lambda@Edge function](https://docs.aws.am
 Within your Lambda@Edge function, you can import and use the `Authenticator` class as shown here:
 
 ``` js
-const { Authenticator } = require('cognito-at-edge');
+const { Authenticator } = require('secure-cognito-at-edge');
 
 const authenticator = new Authenticator({
   // Replace these parameter values with those of your own environment
@@ -76,14 +76,14 @@ exports.handler = async (request) => authenticator.handle(request);
 
 ### Getting Help
 
-The best way to interact with our team is through GitHub.  You can [open an issue](https://github.com/awslabs/cognito-at-edge/issues/new/choose) 
-and choose from one of our templates for [bug reports](https://github.com/awslabs/cognito-at-edge/issues/new?assignees=&labels=bug%2C+needs-triage&template=---bug-report.md&title=), 
-[feature requests](https://github.com/awslabs/cognito-at-edge/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) or 
-[question](https://github.com/awslabs/cognito-at-edge/issues/new?assignees=&labels=question%2C+needs-triage&template=---questions---help.md&title=).  
+The best way to interact with our team is through GitHub.  You can [open an issue](https://github.com/aiden-sobey/cognito-at-edge/issues/new/choose) 
+and choose from one of our templates for [bug reports](https://github.com/aiden-sobey/cognito-at-edge/issues/new?assignees=&labels=bug%2C+needs-triage&template=---bug-report.md&title=), 
+[feature requests](https://github.com/aiden-sobey/cognito-at-edge/issues/new?assignees=&labels=feature-request&template=---feature-request.md&title=) or 
+[question](https://github.com/aiden-sobey/cognito-at-edge/issues/new?assignees=&labels=question%2C+needs-triage&template=---questions---help.md&title=).  
 
 ## Contributing
 
-We welcome community contributions and pull requests. See [CONTRIBUTING.md](https://github.com/awslabs/cognito-at-edge/blob/main/CONTRIBUTING.md) for information on how to set up a development environment and submit code.
+We welcome community contributions and pull requests. See [CONTRIBUTING.md](https://github.com/aiden-sobey/cognito-at-edge/blob/main/CONTRIBUTING.md) for information on how to set up a development environment and submit code.
 
 ### License
 
