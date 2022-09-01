@@ -116,8 +116,8 @@ export class Authenticator {
     const username = decoded['cognito:username'];
     const usernameBase = `${this._cookieBase}.${username}`;
     const directives = (!this._disableCookieDomain) ? 
-      `Domain=${domain}; Expires=${new Date(Date.now() + this._cookieExpirationDays * 864e+5)}; Secure` :
-      `Expires=${new Date(Date.now() + this._cookieExpirationDays * 864e+5)}; Secure`;
+      `Domain=${domain}; Expires=${new Date(Date.now() + this._cookieExpirationDays * 864e+5)}; SameSite=Strict; Secure` :
+      `Expires=${new Date(Date.now() + this._cookieExpirationDays * 864e+5)}; SameSite=Strict; Secure`;
     const response = {
       status: '302' ,
       headers: {
